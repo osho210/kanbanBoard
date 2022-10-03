@@ -1,8 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { GlobalStyle } from './GlobalStyle'
-import {App} from './App'
 
+function App() {
+
+    
 
 // 第一引数を第二引数のDOM要素にマウントするメソッド
 ReactDOM.render(
