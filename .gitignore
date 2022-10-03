@@ -1,0 +1,7 @@
+# バージョン管理しなくていいファイル
+#npm 
+node_modules/
+
+#Parcel
+/.cashe/
+/dist/
