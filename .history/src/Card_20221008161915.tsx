@@ -10,7 +10,7 @@ export function Card({ text }: { text?: string }) {
   const [drag, setDrag] = useState(false)
   return (
     <Container
-      style={{ opacity: drag ? 0.5 : undefined }}
+      style={{ opacity: drag ? 0.5 : undifined }}
       onDragStart={() => {
         setDrag(true)
       }}
@@ -188,4 +188,3 @@ const DropAreaIndicator = styled.div`
   border: dashed 3px ${color.Gray};
   border-radius: 6px;
   transition: all 50ms ease-out;
-  `

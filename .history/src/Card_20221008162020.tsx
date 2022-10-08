@@ -187,5 +187,4 @@ const DropAreaIndicator = styled.div`
   height: 40px;
   border: dashed 3px ${color.Gray};
   border-radius: 6px;
-  transition: all 50ms ease-out;
-  `
+  transition: all 50ms ease-out;`
