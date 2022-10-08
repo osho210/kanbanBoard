@@ -28,13 +28,14 @@ export function InputForm({
         onConfirm?.()
     }
 
-
-    const ref = useAutoFitToContentHeight(value)
+    const ref = useRef<HTMLTextAreaElement>(null)
+    useEffect(
+        
+    )
 
     return (
         <Container className={className}>
             <Input
-                ref={ref}
                 autoFocus
                 placeholder="Enter a note"
                 value={value}
@@ -51,21 +52,6 @@ export function InputForm({
             </ButtonRow>
         </Container>
     )
-}
-
-function useAutoFitToContentHeight(content: string | undefined) {
-    const ref = useRef<HTMLTextAreaElement>(null)
-    useEffect(
-        () => {
-            const el = ref.current
-            if (!el) return
-            const { borderTopWidth, borderBottomWidth } = getComputedStyle(el)
-            el.style.height = 'auto'
-            el.style.height = `calc(${borderTopWidth}+${el.scrollHeight}px+${borderBottomWidth})`
-        },
-        [content],
-    )
-    return ref
 }
 
 const Container = styled.div``

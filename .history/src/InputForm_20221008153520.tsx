@@ -60,8 +60,9 @@ function useAutoFitToContentHeight(content: string | undefined) {
             const el = ref.current
             if (!el) return
             const { borderTopWidth, borderBottomWidth } = getComputedStyle(el)
+            const { borderTopwidth, borderBottomWidth } = getComputedStyle(el)
             el.style.height = 'auto'
-            el.style.height = `calc(${borderTopWidth}+${el.scrollHeight}px+${borderBottomWidth})`
+            el.style.height = `calc(${borderTopwidth}+${el.scrollHeight}px+${borderBottomWidth})`
         },
         [content],
     )

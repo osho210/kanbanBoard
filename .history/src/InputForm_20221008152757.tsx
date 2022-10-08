@@ -53,19 +53,13 @@ export function InputForm({
     )
 }
 
-function useAutoFitToContentHeight(content: string | undefined) {
+function useAutoFitToContentHeight(content:string | undefined){
     const ref = useRef<HTMLTextAreaElement>(null)
     useEffect(
-        () => {
+        ()=>{
             const el = ref.current
-            if (!el) return
-            const { borderTopWidth, borderBottomWidth } = getComputedStyle(el)
-            el.style.height = 'auto'
-            el.style.height = `calc(${borderTopWidth}+${el.scrollHeight}px+${borderBottomWidth})`
-        },
-        [content],
+        }
     )
-    return ref
 }
 
 const Container = styled.div``
