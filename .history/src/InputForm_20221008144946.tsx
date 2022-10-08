@@ -14,7 +14,7 @@ export function InputForm({
     : {
         value?: string
         onChange?(value: string): void
-        onConfirm?(): void
+        onConfirm?(value: string): void
         onCancel?(): void
         className?: string
     }) {
@@ -34,7 +34,7 @@ export function InputForm({
                 autoFocus
                 placeholder="Enter a note"
                 value={value}
-                onChange={ev => onChange?.(ev.currentTarget.value)}
+                onChange={ev => setValue(ev.currentTarget.value)}
                 onKeyDown={ev => {
                     if (!((ev.metaKey || ev.ctrlKey) && ev.key === 'Enter')) return
                     handleConfirm()

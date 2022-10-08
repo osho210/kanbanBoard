@@ -20,10 +20,10 @@ export function Column({ title, cards, }: {
   const totalCount = cards.length
 
   // useStateは第1引数が変数、第2引数が変数上書きのための関数
-  const [text, setText] = useState('')
+const [text,setText]= useState()
   const [inputMode, setInputMode] = useState(false)
   const toggleInput = () => setInputMode(v => !v)
-  const confirmInput = () => setInputMode(false)
+  const confirmInput = () => console.log
   const canselInput = () => setInputMode(false)
 
   return (
@@ -38,8 +38,7 @@ export function Column({ title, cards, }: {
       {inputMode && (
         <InputForm
           // stateの値
-          value={text}
-          onChange={setText}
+
           onConfirm={confirmInput}
           onCancel={canselInput}
         />

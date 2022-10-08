@@ -38,8 +38,7 @@ export function Column({ title, cards, }: {
       {inputMode && (
         <InputForm
           // stateの値
-          value={text}
-          onChange={setText}
+
           onConfirm={confirmInput}
           onCancel={canselInput}
         />

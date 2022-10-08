@@ -6,26 +6,25 @@ import { Button, ConfirmButton } from './Button'
 
 // 第一引数がprops
 export function InputForm({
-    value,
-    onChange,
     onConfirm,
     onCancel,
     className, }
     : {
-        value?: string
-        onChange?(value: string): void
-        onConfirm?(): void
+        onConfilm?()
         onCancel?(): void
         className?: string
     }) {
 
+    const [value, setValue] = useState('')
     // valueが存在しない場合に処理を実行？
     const disabled = !value?.trim()
     // confirm表示処理
     const handleConfirm = () => {
         // disabledが存在すると実行しない
         if (disabled) return
-        onConfirm?.()
+        // onConfirm?.()
+        setValue('')
+        onConfirm?.(value)
     }
 
     return (
@@ -34,7 +33,7 @@ export function InputForm({
                 autoFocus
                 placeholder="Enter a note"
                 value={value}
-                onChange={ev => onChange?.(ev.currentTarget.value)}
+                onChange={ev => setValue(ev.currentTarget.value)}
                 onKeyDown={ev => {
                     if (!((ev.metaKey || ev.ctrlKey) && ev.key === 'Enter')) return
                     handleConfirm()

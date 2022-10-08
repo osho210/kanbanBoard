@@ -1,31 +1,33 @@
 // 受け取った値の表示・ボタンクリックや入力の通知がInputFormの責務
-import React, { useState, useEffect, useRef } from 'react'
+import React, { useState,useEffect,user } from 'react'
 import styled from 'styled-components'
 import * as color from './color'
 import { Button, ConfirmButton } from './Button'
 
 // 第一引数がprops
 export function InputForm({
-    value,
-    onChange,
     onConfirm,
     onCancel,
     className, }
     : {
+        // 引数で取得する変数の型宣言(voidは関数の処理のみを実行)
         value?: string
         onChange?(value: string): void
-        onConfirm?(): void
+        onConfirm?(value: string): void
         onCancel?(): void
         className?: string
     }) {
 
+    const [value, setValue] = useState('')
     // valueが存在しない場合に処理を実行？
     const disabled = !value?.trim()
     // confirm表示処理
     const handleConfirm = () => {
         // disabledが存在すると実行しない
         if (disabled) return
-        onConfirm?.()
+        // onConfirm?.()
+        setValue('')
+        onConfirm?.(value)
     }
 
     return (
@@ -34,7 +36,7 @@ export function InputForm({
                 autoFocus
                 placeholder="Enter a note"
                 value={value}
-                onChange={ev => onChange?.(ev.currentTarget.value)}
+                onChange={ev => setValue(ev.currentTarget.value)}
                 onKeyDown={ev => {
                     if (!((ev.metaKey || ev.ctrlKey) && ev.key === 'Enter')) return
                     handleConfirm()

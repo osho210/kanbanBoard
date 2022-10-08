@@ -23,7 +23,7 @@ export function Column({ title, cards, }: {
   const [text, setText] = useState('')
   const [inputMode, setInputMode] = useState(false)
   const toggleInput = () => setInputMode(v => !v)
-  const confirmInput = () => setInputMode(false)
+  const confirmInput = () => console.log
   const canselInput = () => setInputMode(false)
 
   return (

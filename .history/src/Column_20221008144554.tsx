@@ -23,7 +23,7 @@ export function Column({ title, cards, }: {
   const [text, setText] = useState('')
   const [inputMode, setInputMode] = useState(false)
   const toggleInput = () => setInputMode(v => !v)
-  const confirmInput = () => setInputMode(false)
+  const confirmInput = () => setIn
   const canselInput = () => setInputMode(false)
 
   return (
@@ -38,8 +38,7 @@ export function Column({ title, cards, }: {
       {inputMode && (
         <InputForm
           // stateの値
-          value={text}
-          onChange={setText}
+
           onConfirm={confirmInput}
           onCancel={canselInput}
         />
