@@ -9,6 +9,12 @@
         "@types/react": "^18.0.21",
         "@types/react-dom": "^18.0.6",
         "@types/styled-components": "^5.1.26",
+        "@typescript-eslint/eslint-plugin": "^5.40.0",
+        "@typescript-eslint/parser": "^5.40.0",
+        "eslint": "^8.25.0",
+        "eslint-plugin-react": "^7.31.9",
+        "eslint-plugin-react-hooks": "^4.6.0",
+        "json-server": "^0.17.0",
         "parcel-bundler": "^1.12.5",
         "prettier": "^2.7.1",
         "typescript": "^3.8.3"
