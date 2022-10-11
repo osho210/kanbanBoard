@@ -101,18 +101,6 @@ export function App() {
   const addCard = (columnID: string) => {
     const cardID = randomID()
     type Columns = typeof columns
-    setColumns(
-      produce((columns: Columns) => {
-        const column = columns.find(c => c.id === columnID)
-        if (!column) return
-
-        column.cards.unshift({
-          id: cardID,
-          text: column.text,
-        })
-        column.text = ''
-      }),
-    )
   }
 
   const deleteCard = () => {
@@ -148,7 +136,6 @@ export function App() {
               onCardDeleteClick={cardID => setDeletetingCardID(cardID)}
               text={text}
               onTextChange={value => setText(columnID, value)}
-              onTextConfirm={() => addCard(columnID)}
             />
           ))}
         </HorizontalScroll>

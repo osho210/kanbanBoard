@@ -5,7 +5,6 @@ import { Column } from './Column'
 import produce from 'immer'
 import { DeleteDialog } from "./DeleteDialog";
 import { Overlay as _Overlay } from "./Overlay";
-import { randomID } from './util'
 
 export function App() {
   const [filterValue, setFilterValue] = useState('')
@@ -13,7 +12,7 @@ export function App() {
     {
       id: 'A',
       title: 'TODO',
-      text: '',
+      text:'',
       cards: [
         { id: 'a', text: '朝食をとる' },
         { id: 'b', text: 'SNSをチェックする' },
@@ -23,7 +22,7 @@ export function App() {
     {
       id: 'B',
       title: 'Doing',
-      text: '',
+      text:'',
       cards: [
         { id: 'd', text: '顔を洗う' },
         { id: 'e', text: '歯を磨く' },
@@ -32,13 +31,13 @@ export function App() {
     {
       id: 'C',
       title: 'Waiting',
-      text: '',
+      text:'',
       cards: [],
     },
     {
       id: 'D',
       title: 'Done',
-      text: '',
+      text:'',
       cards: [{
         id: 'f', text: '布団から出る'
       }]
@@ -87,31 +86,13 @@ export function App() {
     )
   }
 
-  const setText = (colunID: string, value: string) => {
+  const setText=(colunID:string,value:string)=>{
     type Columns = typeof columns
     setColumns(
-      produce((columns: Columns) => {
-        const column = columns.find(c => c.id === colunID)
-        if (!column) return
-        column.text = value
-      }),
-    )
-  }
-
-  const addCard = (columnID: string) => {
-    const cardID = randomID()
-    type Columns = typeof columns
-    setColumns(
-      produce((columns: Columns) => {
-        const column = columns.find(c => c.id === columnID)
-        if (!column) return
-
-        column.cards.unshift({
-          id: cardID,
-          text: column.text,
-        })
-        column.text = ''
-      }),
+      produce((columns:Columns)=>{
+        const column = columns.find(c =>c.id===colunID)
+        
+      })
     )
   }
 
@@ -137,7 +118,7 @@ export function App() {
       <Header filterValue={filterValue} onFilterChange={setFilterValue} />
       <MainArea>
         <HorizontalScroll>
-          {columns.map(({ id: columnID, title, cards, text }) => (
+          {columns.map(({ id: columnID, title, cards }) => (
             <Column
               key={columnID}
               title={title}
@@ -146,9 +127,6 @@ export function App() {
               onCardDragStart={cardID => setDraggingCardID(cardID)}
               onCardDrop={entered => dropCardTo(entered ?? columnID)}
               onCardDeleteClick={cardID => setDeletetingCardID(cardID)}
-              text={text}
-              onTextChange={value => setText(columnID, value)}
-              onTextConfirm={() => addCard(columnID)}
             />
           ))}
         </HorizontalScroll>

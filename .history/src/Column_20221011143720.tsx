@@ -26,11 +26,9 @@ export function Column({
   onCardDragStart?(id: string): void
   onCardDrop?(entered: string | null): void
   onCardDeleteClick?(id: string): void
-  text?: string
-  onTextChange?(value: string): void
-  onTextConfirm?(): void
-  onTextCancel?(): void
-
+  text?:string
+  onTextChange?(value:string):void
+  onTextConfirm?(:void)
 }) {
   const filterValue = rawFilterValue?.trim()
   const keywords = filterValue?.toLowerCase().split(/\s+/g) ?? []
@@ -39,15 +37,12 @@ export function Column({
   )
   const totalCount = rawCards.length
 
+  const [text, setText] = useState('')
+
   const [inputMode, setInputMode] = useState(false)
   const toggleInput = () => setInputMode(v => !v)
-  const confirmInput = () => {
-    onTextConfirm?.()
-  }
-  const cancelInput = () => {
-    setInputMode(false)
-    onTextCancel?.()
-  }
+  const confirmInput = () => setText('')
+  const cancelInput = () => setInputMode(false)
 
   // ドラッグ時のstate管理で定義している
   const [draggingCardID, setDraggingCardID] = useState<string | undefined>(
@@ -71,7 +66,7 @@ export function Column({
       {inputMode && (
         <InputForm
           value={text}
-          onChange={onTextChange}
+          onChange={setText}
           onConfirm={confirmInput}
           onCancel={cancelInput}
         />

@@ -41,12 +41,12 @@ export function Column({
 
   const [inputMode, setInputMode] = useState(false)
   const toggleInput = () => setInputMode(v => !v)
-  const confirmInput = () => {
+  const confirmInput = ()=>{
     onTextConfirm?.()
   }
-  const cancelInput = () => {
+  const cancelInput=()=>{
     setInputMode(false)
-    onTextCancel?.()
+    onTextCancel
   }
 
   // ドラッグ時のstate管理で定義している
@@ -71,7 +71,7 @@ export function Column({
       {inputMode && (
         <InputForm
           value={text}
-          onChange={onTextChange}
+          onChange={setText}
           onConfirm={confirmInput}
           onCancel={cancelInput}
         />

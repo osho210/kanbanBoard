@@ -71,7 +71,7 @@ export function Column({
       {inputMode && (
         <InputForm
           value={text}
-          onChange={onTextChange}
+          onChange={setText}
           onConfirm={confirmInput}
           onCancel={cancelInput}
         />

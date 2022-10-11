@@ -148,7 +148,7 @@ export function App() {
               onCardDeleteClick={cardID => setDeletetingCardID(cardID)}
               text={text}
               onTextChange={value => setText(columnID, value)}
-              onTextConfirm={() => addCard(columnID)}
+              onTextConfir={() => addCard(columnID)}
             />
           ))}
         </HorizontalScroll>

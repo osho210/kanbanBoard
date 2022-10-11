@@ -5,7 +5,6 @@ import { Column } from './Column'
 import produce from 'immer'
 import { DeleteDialog } from "./DeleteDialog";
 import { Overlay as _Overlay } from "./Overlay";
-import { randomID } from './util'
 
 export function App() {
   const [filterValue, setFilterValue] = useState('')
@@ -94,24 +93,7 @@ export function App() {
         const column = columns.find(c => c.id === colunID)
         if (!column) return
         column.text = value
-      }),
-    )
-  }
-
-  const addCard = (columnID: string) => {
-    const cardID = randomID()
-    type Columns = typeof columns
-    setColumns(
-      produce((columns: Columns) => {
-        const column = columns.find(c => c.id === columnID)
-        if (!column) return
-
-        column.cards.unshift({
-          id: cardID,
-          text: column.text,
-        })
-        column.text = ''
-      }),
+      })
     )
   }
 
@@ -137,7 +119,7 @@ export function App() {
       <Header filterValue={filterValue} onFilterChange={setFilterValue} />
       <MainArea>
         <HorizontalScroll>
-          {columns.map(({ id: columnID, title, cards, text }) => (
+          {columns.map(({ id: columnID, title, cards }) => (
             <Column
               key={columnID}
               title={title}
@@ -146,9 +128,6 @@ export function App() {
               onCardDragStart={cardID => setDraggingCardID(cardID)}
               onCardDrop={entered => dropCardTo(entered ?? columnID)}
               onCardDeleteClick={cardID => setDeletetingCardID(cardID)}
-              text={text}
-              onTextChange={value => setText(columnID, value)}
-              onTextConfirm={() => addCard(columnID)}
             />
           ))}
         </HorizontalScroll>
