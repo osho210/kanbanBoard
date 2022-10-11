@@ -149,17 +149,153 @@
         "version": "5917af4ff931b050dba49a1dedd9c00f15f7b3dc4345ad8491bfacd2ec68ed32",
         "signature": "5917af4ff931b050dba49a1dedd9c00f15f7b3dc4345ad8491bfacd2ec68ed32"
       },
+      "../node_modules/@types/hoist-non-react-statics/index.d.ts": {
+        "version": "bfe1b52cf71aea9bf8815810cc5d9490fa9617313e3d3c2ee3809a28b80d0bb4",
+        "signature": "bfe1b52cf71aea9bf8815810cc5d9490fa9617313e3d3c2ee3809a28b80d0bb4"
+      },
+      "../node_modules/@types/styled-components/index.d.ts": {
+        "version": "356701ea5df9eea3bf62b0f29857cb950d95eec9b9063f85c17be705926cdd2a",
+        "signature": "356701ea5df9eea3bf62b0f29857cb950d95eec9b9063f85c17be705926cdd2a"
+      },
+      "../src/color.ts": {
+        "version": "445172a31ff49d57ff77ba80305cd662a16b4b147c7b2bc0acceada19227cfe8",
+        "signature": "4437d45a24c26567a9ed22db651e1e0521195c60c9c77692e3bc3cbe531069ba"
+      },
+      "../src/icon.tsx": {
+        "version": "2a4498305d3d35d3cbda57174b1aab01ad17ee4347737c8fb9938ab18a08cfc3",
+        "signature": "546daa3d2c3f7417d0bd246e7299d562396f088340a1a32720d0886b54426317"
+      },
+      "../src/CardFilter.tsx": {
+        "version": "4fb6945ef08137bb557f8c8086b6b82d88ed2083189b11869f008828909c9898",
+        "signature": "0f63253fc8a2efa0d1af929dd7edac35de157a3cc19aca01d0d0842c81b9574a"
+      },
+      "../src/Header.tsx": {
+        "version": "28aef1df523efdbb1d48c44b75a123e11061931a49ec92d235b167ef909ccd7b",
+        "signature": "f42a6ace7b528ade15a0c5a96062c605043f6671a96a513db41e3b930639de28"
+      },
+      "../src/Card.tsx": {
+        "version": "9f243e36933ac353f62e2402f844d0da9ca09169fecc2c07a8b92d6d48253da0",
+        "signature": "fcc7e6e96b0dc279b36f71848335a7636e36b2348c078263508265dc643da930"
+      },
+      "../src/Button.tsx": {
+        "version": "6272c23527dbf1eebcfc354200e22d8f7d0e2d6fa3e77c2a230a6bc45d75f277",
+        "signature": "c2646de9e12b2a26d146a9f2d9c092e18c0aab19d1a5ebb38ff1982e3ccd3b6e"
+      },
+      "../src/InputForm.tsx": {
+        "version": "832a5aa44012d251edc15559a7190b5243498024dea703b5b4ee301f4c075769",
+        "signature": "0a960d2a06adcd8c939a005a122f07e950ec6a66c0dd4eea9e82ac791e28a436"
+      },
+      "../src/Column.tsx": {
+        "version": "6dff6f6b3a013d9176873712f561bfd1dd8021e6fbb24487b7c5f709d8b1b7c4",
+        "signature": "bc4b6516c280ec851e7e4bc84da07ee2e5c26f6166ba55f1f8e6e19c497899bf"
+      },
+      "../node_modules/immer/dist/utils/env.d.ts": {
+        "version": "4df0891b133884cd9ed752d31c7d0ec0a09234e9ed5394abffd3c660761598db",
+        "signature": "4df0891b133884cd9ed752d31c7d0ec0a09234e9ed5394abffd3c660761598db"
+      },
+      "../node_modules/immer/dist/utils/errors.d.ts": {
+        "version": "b603b62d3dcd31ef757dc7339b4fa8acdbca318b0fb9ac485f9a1351955615f9",
+        "signature": "b603b62d3dcd31ef757dc7339b4fa8acdbca318b0fb9ac485f9a1351955615f9"
+      },
+      "../node_modules/immer/dist/types/types-external.d.ts": {
+        "version": "d3e9a37cfa95a45dc2a09e24fa1654a9b9cd75550a8ab633e9a1df0b1d03282a",
+        "signature": "d3e9a37cfa95a45dc2a09e24fa1654a9b9cd75550a8ab633e9a1df0b1d03282a"
+      },
+      "../node_modules/immer/dist/types/types-internal.d.ts": {
+        "version": "be90b24d2ee6f875ce3aaa482e7c41a54278856b03d04212681c4032df62baf9",
+        "signature": "be90b24d2ee6f875ce3aaa482e7c41a54278856b03d04212681c4032df62baf9"
+      },
+      "../node_modules/immer/dist/utils/common.d.ts": {
+        "version": "78f5ff400b3cb37e7b90eef1ff311253ed31c8cb66505e9828fad099bffde021",
+        "signature": "78f5ff400b3cb37e7b90eef1ff311253ed31c8cb66505e9828fad099bffde021"
+      },
+      "../node_modules/immer/dist/utils/plugins.d.ts": {
+        "version": "372c47090e1131305d163469a895ff2938f33fa73aad988df31cd31743f9efb6",
+        "signature": "372c47090e1131305d163469a895ff2938f33fa73aad988df31cd31743f9efb6"
+      },
+      "../node_modules/immer/dist/core/scope.d.ts": {
+        "version": "71c67dc6987bdbd5599353f90009ff825dd7db0450ef9a0aee5bb0c574d18512",
+        "signature": "71c67dc6987bdbd5599353f90009ff825dd7db0450ef9a0aee5bb0c574d18512"
+      },
+      "../node_modules/immer/dist/core/finalize.d.ts": {
+        "version": "6f12403b5eca6ae7ca8e3efe3eeb9c683b06ce3e3844ccfd04098d83cd7e4957",
+        "signature": "6f12403b5eca6ae7ca8e3efe3eeb9c683b06ce3e3844ccfd04098d83cd7e4957"
+      },
+      "../node_modules/immer/dist/core/proxy.d.ts": {
+        "version": "282c535df88175d64d9df4550d2fd1176fd940c1c6822f1e7584003237f179d3",
+        "signature": "282c535df88175d64d9df4550d2fd1176fd940c1c6822f1e7584003237f179d3"
+      },
+      "../node_modules/immer/dist/core/immerClass.d.ts": {
+        "version": "399a35805f9274c83878e64eb12edbd6ed943e36811cb474591bf170d045a0a3",
+        "signature": "399a35805f9274c83878e64eb12edbd6ed943e36811cb474591bf170d045a0a3"
+      },
+      "../node_modules/immer/dist/core/current.d.ts": {
+        "version": "11a9e38611ac3c77c74240c58b6bd64a0032128b29354e999650f1de1e034b1c",
+        "signature": "11a9e38611ac3c77c74240c58b6bd64a0032128b29354e999650f1de1e034b1c"
+      },
+      "../node_modules/immer/dist/internal.d.ts": {
+        "version": "4ed103ca6fff9cb244f7c4b86d1eb28ce8069c32db720784329946731badb5bb",
+        "signature": "4ed103ca6fff9cb244f7c4b86d1eb28ce8069c32db720784329946731badb5bb"
+      },
+      "../node_modules/immer/dist/plugins/es5.d.ts": {
+        "version": "d738f282842970e058672663311c6875482ee36607c88b98ffb6604fba99cb2a",
+        "signature": "d738f282842970e058672663311c6875482ee36607c88b98ffb6604fba99cb2a"
+      },
+      "../node_modules/immer/dist/plugins/patches.d.ts": {
+        "version": "ec859cd8226aa623e41bbb47c249a55ee16dc1b8647359585244d57d3a5ed0c7",
+        "signature": "ec859cd8226aa623e41bbb47c249a55ee16dc1b8647359585244d57d3a5ed0c7"
+      },
+      "../node_modules/immer/dist/plugins/mapset.d.ts": {
+        "version": "8891c6e959d253a66434ff5dc9ae46058fb3493e84b4ca39f710ef2d350656b1",
+        "signature": "8891c6e959d253a66434ff5dc9ae46058fb3493e84b4ca39f710ef2d350656b1"
+      },
+      "../node_modules/immer/dist/plugins/all.d.ts": {
+        "version": "c4463cf02535444dcbc3e67ecd29f1972490f74e49957d6fd4282a1013796ba6",
+        "signature": "c4463cf02535444dcbc3e67ecd29f1972490f74e49957d6fd4282a1013796ba6"
+      },
+      "../node_modules/immer/dist/immer.d.ts": {
+        "version": "0cb0a957ff02de0b25fd0f3f37130ca7f22d1e0dea256569c714c1f73c6791f8",
+        "signature": "0cb0a957ff02de0b25fd0f3f37130ca7f22d1e0dea256569c714c1f73c6791f8"
+      },
+      "../src/DeleteDialog.tsx": {
+        "version": "cf573aadfbedaa747b4db7b8c8dfde60b5458f2c676c162a03a50761a8162460",
+        "signature": "7a69183a643ae18ac068d2f736f065fddbbfd2a983dbb0b2a18c689af0a38699"
+      },
+      "../src/Overlay.tsx": {
+        "version": "16413b5c8cfc8c2eb48c5bdf8077230933a3de68860edff98a6faad2f23b3f86",
+        "signature": "6c75fb1cd1e14465bdc613cab5da63cfce457aacf81b28457787d322f37135fb"
+      },
+      "../src/util.ts": {
+        "version": "31756506fe28c8526fe21f0129b21a6348f26b4841152ffc6450573d049cff04",
+        "signature": "8b5f6827bbee9f5664c2970e3d717eb7f271d4158e47d6dfb12faa9f0e61f4e1"
+      },
+      "../src/api.tsx": {
+        "version": "a056ef1f9e42e1c2a65fb13dfa6d982785f8528742aaddeb4ac503b0e87931cd",
+        "signature": "09009eec92fc6f2d6173647787594bd7d5b07457bb6819c03dc2094661432769"
+      },
+      "../src/App.tsx": {
+        "version": "c9af2737f9fdc6e39a39c432f0bf9cf2e8d3ba30187024dff513cd8f48bf8e21",
+        "signature": "175b707a48b16954715fe73825ee6a7ff9ec47526611ba6c3a9a48e0efa9e604"
+      },
+      "../src/GlobalStyle.tsx": {
+        "version": "dfbd7c3690c0042989ad84524282ca02c2e5379f1fb57b373e5806d52e01c4d8",
+        "signature": "ce72a854a85ae0b4db793ce8a9b4eb2c040b30984c43bd3f339e5ec5c40ef29e"
+      },
       "../node_modules/@types/react-dom/index.d.ts": {
         "version": "e4dd91dd4789a109aab51d8a0569a282369fcda9ba6f2b2297bc61bacfb1a042",
         "signature": "e4dd91dd4789a109aab51d8a0569a282369fcda9ba6f2b2297bc61bacfb1a042"
       },
       "../src/index.tsx": {
-        "version": "179f15c2342699cc70cad282a102db859ae0904df8fbeec3b5f75f74d8c79f0d",
+        "version": "7d7ff83c6091b6790f6509c0d04b9991c8f88c126325fd43b5c7d54a25ec47a4",
         "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881"
       },
-      "../node_modules/@types/hoist-non-react-statics/index.d.ts": {
-        "version": "bfe1b52cf71aea9bf8815810cc5d9490fa9617313e3d3c2ee3809a28b80d0bb4",
-        "signature": "bfe1b52cf71aea9bf8815810cc5d9490fa9617313e3d3c2ee3809a28b80d0bb4"
+      "../src/typings.d.ts": {
+        "version": "0d3bbd604944e05e4e1f58e84aceb1e4eee271e1baf953e50540ade6707af43b",
+        "signature": "0d3bbd604944e05e4e1f58e84aceb1e4eee271e1baf953e50540ade6707af43b"
+      },
+      "../node_modules/@types/json-schema/index.d.ts": {
+        "version": "f3e604694b624fa3f83f6684185452992088f5efb2cf136b62474aa106d6f1b6",
+        "signature": "f3e604694b624fa3f83f6684185452992088f5efb2cf136b62474aa106d6f1b6"
       },
       "../node_modules/@types/q/index.d.ts": {
         "version": "62b931417104c7cb35d0725e1869f51d52d7b18462fd58f32f846a314a42ba10",
@@ -168,10 +304,6 @@
       "../node_modules/@types/scheduler/index.d.ts": {
         "version": "74b0245c42990ed8a849df955db3f4362c81b13f799ebc981b7bec2d5b414a57",
         "signature": "74b0245c42990ed8a849df955db3f4362c81b13f799ebc981b7bec2d5b414a57"
-      },
-      "../node_modules/@types/styled-components/index.d.ts": {
-        "version": "356701ea5df9eea3bf62b0f29857cb950d95eec9b9063f85c17be705926cdd2a",
-        "signature": "356701ea5df9eea3bf62b0f29857cb950d95eec9b9063f85c17be705926cdd2a"
       }
     },
     "options": {
@@ -187,6 +319,7 @@
       "jsx": 2,
       "incremental": true,
       "outDir": "./",
+      "skipLibCheck": true,
       "strictNullChecks": true,
       "configFilePath": "../tsconfig.json"
     },
@@ -197,13 +330,6 @@
         "../node_modules/@types/scheduler/tracing.d.ts",
         "../node_modules/@types/react/global.d.ts"
       ],
-      "../node_modules/@types/react-dom/index.d.ts": [
-        "../node_modules/@types/react/index.d.ts"
-      ],
-      "../src/index.tsx": [
-        "../node_modules/@types/react/index.d.ts",
-        "../node_modules/@types/react-dom/index.d.ts"
-      ],
       "../node_modules/@types/hoist-non-react-statics/index.d.ts": [
         "../node_modules/@types/react/index.d.ts"
       ],
@@ -211,14 +337,126 @@
         "../node_modules/csstype/index.d.ts",
         "../node_modules/@types/react/index.d.ts",
         "../node_modules/@types/hoist-non-react-statics/index.d.ts"
+      ],
+      "../src/icon.tsx": [
+        "../node_modules/@types/react/index.d.ts",
+        "../node_modules/@types/styled-components/index.d.ts"
+      ],
+      "../src/CardFilter.tsx": [
+        "../node_modules/@types/react/index.d.ts",
+        "../node_modules/@types/styled-components/index.d.ts",
+        "../src/color.ts",
+        "../src/icon.tsx"
+      ],
+      "../src/Header.tsx": [
+        "../node_modules/@types/react/index.d.ts",
+        "../node_modules/@types/styled-components/index.d.ts",
+        "../src/color.ts",
+        "../src/CardFilter.tsx"
+      ],
+      "../src/Card.tsx": [
+        "../node_modules/@types/react/index.d.ts",
+        "../node_modules/@types/styled-components/index.d.ts",
+        "../src/color.ts",
+        "../src/icon.tsx"
+      ],
+      "../src/Button.tsx": [
+        "../node_modules/@types/styled-components/index.d.ts",
+        "../src/color.ts"
+      ],
+      "../src/InputForm.tsx": [
+        "../node_modules/@types/react/index.d.ts",
+        "../node_modules/@types/styled-components/index.d.ts",
+        "../src/color.ts",
+        "../src/Button.tsx"
+      ],
+      "../src/Column.tsx": [
+        "../node_modules/@types/react/index.d.ts",
+        "../node_modules/@types/styled-components/index.d.ts",
+        "../src/color.ts",
+        "../src/Card.tsx",
+        "../src/icon.tsx",
+        "../src/InputForm.tsx"
+      ],
+      "../node_modules/immer/dist/types/types-external.d.ts": [
+        "../node_modules/immer/dist/internal.d.ts"
+      ],
+      "../node_modules/immer/dist/types/types-internal.d.ts": [
+        "../node_modules/immer/dist/internal.d.ts"
+      ],
+      "../node_modules/immer/dist/utils/common.d.ts": [
+        "../node_modules/immer/dist/internal.d.ts"
+      ],
+      "../node_modules/immer/dist/utils/plugins.d.ts": [
+        "../node_modules/immer/dist/internal.d.ts"
+      ],
+      "../node_modules/immer/dist/core/scope.d.ts": [
+        "../node_modules/immer/dist/internal.d.ts"
+      ],
+      "../node_modules/immer/dist/core/finalize.d.ts": [
+        "../node_modules/immer/dist/internal.d.ts"
+      ],
+      "../node_modules/immer/dist/core/proxy.d.ts": [
+        "../node_modules/immer/dist/internal.d.ts"
+      ],
+      "../node_modules/immer/dist/core/immerClass.d.ts": [
+        "../node_modules/immer/dist/internal.d.ts"
+      ],
+      "../node_modules/immer/dist/internal.d.ts": [
+        "../node_modules/immer/dist/utils/env.d.ts",
+        "../node_modules/immer/dist/utils/errors.d.ts",
+        "../node_modules/immer/dist/types/types-external.d.ts",
+        "../node_modules/immer/dist/types/types-internal.d.ts",
+        "../node_modules/immer/dist/utils/common.d.ts",
+        "../node_modules/immer/dist/utils/plugins.d.ts",
+        "../node_modules/immer/dist/core/scope.d.ts",
+        "../node_modules/immer/dist/core/finalize.d.ts",
+        "../node_modules/immer/dist/core/proxy.d.ts",
+        "../node_modules/immer/dist/core/immerClass.d.ts",
+        "../node_modules/immer/dist/core/current.d.ts"
+      ],
+      "../node_modules/immer/dist/immer.d.ts": [
+        "../node_modules/immer/dist/internal.d.ts",
+        "../node_modules/immer/dist/plugins/es5.d.ts",
+        "../node_modules/immer/dist/plugins/patches.d.ts",
+        "../node_modules/immer/dist/plugins/mapset.d.ts",
+        "../node_modules/immer/dist/plugins/all.d.ts"
+      ],
+      "../src/DeleteDialog.tsx": [
+        "../node_modules/@types/react/index.d.ts",
+        "../node_modules/@types/styled-components/index.d.ts",
+        "../src/color.ts",
+        "../src/Button.tsx"
+      ],
+      "../src/Overlay.tsx": [
+        "../node_modules/@types/react/index.d.ts",
+        "../node_modules/@types/styled-components/index.d.ts"
+      ],
+      "../src/App.tsx": [
+        "../node_modules/@types/react/index.d.ts",
+        "../node_modules/@types/styled-components/index.d.ts",
+        "../src/Header.tsx",
+        "../src/Column.tsx",
+        "../node_modules/immer/dist/immer.d.ts",
+        "../src/DeleteDialog.tsx",
+        "../src/Overlay.tsx",
+        "../src/util.ts",
+        "../src/api.tsx"
+      ],
+      "../src/GlobalStyle.tsx": [
+        "../node_modules/@types/styled-components/index.d.ts"
+      ],
+      "../node_modules/@types/react-dom/index.d.ts": [
+        "../node_modules/@types/react/index.d.ts"
+      ],
+      "../src/index.tsx": [
+        "../node_modules/@types/react/index.d.ts",
+        "../node_modules/@types/react-dom/index.d.ts",
+        "../src/GlobalStyle.tsx",
+        "../src/App.tsx"
       ]
     },
     "exportedModulesMap": {
-      "../node_modules/@types/styled-components/index.d.ts": [
-        "../node_modules/csstype/index.d.ts",
-        "../node_modules/@types/react/index.d.ts",
-        "../node_modules/@types/hoist-non-react-statics/index.d.ts"
-      ],
       "../node_modules/@types/react/index.d.ts": [
         "../node_modules/csstype/index.d.ts",
         "../node_modules/@types/prop-types/index.d.ts",
@@ -228,22 +466,72 @@
       "../node_modules/@types/hoist-non-react-statics/index.d.ts": [
         "../node_modules/@types/react/index.d.ts"
       ],
+      "../node_modules/@types/styled-components/index.d.ts": [
+        "../node_modules/csstype/index.d.ts",
+        "../node_modules/@types/react/index.d.ts",
+        "../node_modules/@types/hoist-non-react-statics/index.d.ts"
+      ],
+      "../src/Card.tsx": [
+        "../node_modules/@types/react/index.d.ts"
+      ],
+      "../src/Button.tsx": [
+        "../node_modules/@types/styled-components/index.d.ts"
+      ],
+      "../node_modules/immer/dist/types/types-external.d.ts": [
+        "../node_modules/immer/dist/internal.d.ts"
+      ],
+      "../node_modules/immer/dist/types/types-internal.d.ts": [
+        "../node_modules/immer/dist/internal.d.ts"
+      ],
+      "../node_modules/immer/dist/utils/common.d.ts": [
+        "../node_modules/immer/dist/internal.d.ts"
+      ],
+      "../node_modules/immer/dist/utils/plugins.d.ts": [
+        "../node_modules/immer/dist/internal.d.ts"
+      ],
+      "../node_modules/immer/dist/core/scope.d.ts": [
+        "../node_modules/immer/dist/internal.d.ts"
+      ],
+      "../node_modules/immer/dist/core/finalize.d.ts": [
+        "../node_modules/immer/dist/internal.d.ts"
+      ],
+      "../node_modules/immer/dist/core/proxy.d.ts": [
+        "../node_modules/immer/dist/internal.d.ts"
+      ],
+      "../node_modules/immer/dist/core/immerClass.d.ts": [
+        "../node_modules/immer/dist/internal.d.ts"
+      ],
+      "../node_modules/immer/dist/internal.d.ts": [
+        "../node_modules/immer/dist/utils/env.d.ts",
+        "../node_modules/immer/dist/utils/errors.d.ts",
+        "../node_modules/immer/dist/types/types-external.d.ts",
+        "../node_modules/immer/dist/types/types-internal.d.ts",
+        "../node_modules/immer/dist/utils/common.d.ts",
+        "../node_modules/immer/dist/utils/plugins.d.ts",
+        "../node_modules/immer/dist/core/scope.d.ts",
+        "../node_modules/immer/dist/core/finalize.d.ts",
+        "../node_modules/immer/dist/core/proxy.d.ts",
+        "../node_modules/immer/dist/core/immerClass.d.ts",
+        "../node_modules/immer/dist/core/current.d.ts"
+      ],
+      "../node_modules/immer/dist/immer.d.ts": [
+        "../node_modules/immer/dist/internal.d.ts",
+        "../node_modules/immer/dist/plugins/es5.d.ts",
+        "../node_modules/immer/dist/plugins/patches.d.ts",
+        "../node_modules/immer/dist/plugins/mapset.d.ts",
+        "../node_modules/immer/dist/plugins/all.d.ts"
+      ],
+      "../src/Overlay.tsx": [
+        "../node_modules/@types/react/index.d.ts"
+      ],
+      "../src/GlobalStyle.tsx": [
+        "../node_modules/@types/styled-components/index.d.ts"
+      ],
       "../node_modules/@types/react-dom/index.d.ts": [
         "../node_modules/@types/react/index.d.ts"
       ]
     },
     "semanticDiagnosticsPerFile": [
-      "../node_modules/@types/react/global.d.ts",
-      "../node_modules/csstype/index.d.ts",
-      "../node_modules/@types/prop-types/index.d.ts",
-      "../node_modules/@types/scheduler/tracing.d.ts",
-      "../node_modules/@types/react/index.d.ts",
-      "../node_modules/@types/react-dom/index.d.ts",
-      "../src/index.tsx",
-      "../node_modules/@types/hoist-non-react-statics/index.d.ts",
-      "../node_modules/@types/q/index.d.ts",
-      "../node_modules/@types/scheduler/index.d.ts",
-      "../node_modules/@types/styled-components/index.d.ts",
       "../node_modules/typescript/lib/lib.es5.d.ts",
       "../node_modules/typescript/lib/lib.es2015.d.ts",
       "../node_modules/typescript/lib/lib.es2016.d.ts",
@@ -275,7 +563,51 @@
       "../node_modules/typescript/lib/lib.es2019.array.d.ts",
       "../node_modules/typescript/lib/lib.es2019.object.d.ts",
       "../node_modules/typescript/lib/lib.es2019.string.d.ts",
-      "../node_modules/typescript/lib/lib.es2019.symbol.d.ts"
+      "../node_modules/typescript/lib/lib.es2019.symbol.d.ts",
+      "../node_modules/@types/react/global.d.ts",
+      "../node_modules/csstype/index.d.ts",
+      "../node_modules/@types/prop-types/index.d.ts",
+      "../node_modules/@types/scheduler/tracing.d.ts",
+      "../node_modules/@types/react/index.d.ts",
+      "../node_modules/@types/hoist-non-react-statics/index.d.ts",
+      "../node_modules/@types/styled-components/index.d.ts",
+      "../src/color.ts",
+      "../src/icon.tsx",
+      "../src/CardFilter.tsx",
+      "../src/Header.tsx",
+      "../src/Card.tsx",
+      "../src/Button.tsx",
+      "../src/InputForm.tsx",
+      "../src/Column.tsx",
+      "../node_modules/immer/dist/utils/env.d.ts",
+      "../node_modules/immer/dist/utils/errors.d.ts",
+      "../node_modules/immer/dist/types/types-external.d.ts",
+      "../node_modules/immer/dist/types/types-internal.d.ts",
+      "../node_modules/immer/dist/utils/common.d.ts",
+      "../node_modules/immer/dist/utils/plugins.d.ts",
+      "../node_modules/immer/dist/core/scope.d.ts",
+      "../node_modules/immer/dist/core/finalize.d.ts",
+      "../node_modules/immer/dist/core/proxy.d.ts",
+      "../node_modules/immer/dist/core/immerClass.d.ts",
+      "../node_modules/immer/dist/core/current.d.ts",
+      "../node_modules/immer/dist/internal.d.ts",
+      "../node_modules/immer/dist/plugins/es5.d.ts",
+      "../node_modules/immer/dist/plugins/patches.d.ts",
+      "../node_modules/immer/dist/plugins/mapset.d.ts",
+      "../node_modules/immer/dist/plugins/all.d.ts",
+      "../node_modules/immer/dist/immer.d.ts",
+      "../src/DeleteDialog.tsx",
+      "../src/Overlay.tsx",
+      "../src/util.ts",
+      "../src/GlobalStyle.tsx",
+      "../node_modules/@types/react-dom/index.d.ts",
+      "../src/index.tsx",
+      "../src/typings.d.ts",
+      "../node_modules/@types/json-schema/index.d.ts",
+      "../node_modules/@types/q/index.d.ts",
+      "../node_modules/@types/scheduler/index.d.ts",
+      "../src/api.tsx",
+      "../src/App.tsx"
     ]
   },
   "version": "3.8.3"
