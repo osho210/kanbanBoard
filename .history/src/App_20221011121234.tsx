@@ -43,9 +43,7 @@ export function App() {
   const [draggingCardID, setDraggingCardID] = useState<string | undefined>(
     undefined,
   )
-  const [deletetingCardID, setDeletetingCardID] = useState<string | undefined>(
-    undefined,
-  )
+  const [deleteng]
 
   const dropCardTo = (toID: string) => {
     const fromID = draggingCardID
@@ -95,18 +93,14 @@ export function App() {
               cards={cards}
               onCardDragStart={cardID => setDraggingCardID(cardID)}
               onCardDrop={entered => dropCardTo(entered ?? columnID)}
-              onCardDeleteClick={cardID => setDeletetingCardID(cardID)}
+              onCardDeleteClick={cardId => setDeletetingCardID(cardID)}
             />
           ))}
         </HorizontalScroll>
       </MainArea>
-      {deletetingCardID && (
-        <Overlay onClick={() => setDeletetingCardID(undefined)}>
-          <DeleteDialog
-            onConfirm={() => setDeletetingCardID(undefined)}
-          />
-        </Overlay>
-      )}
+      <Overlay>
+        <DeleteDialog />
+      </Overlay>
     </Container>
   )
 }

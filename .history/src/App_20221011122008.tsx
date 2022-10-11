@@ -100,10 +100,10 @@ export function App() {
           ))}
         </HorizontalScroll>
       </MainArea>
-      {deletetingCardID && (
-        <Overlay onClick={() => setDeletetingCardID(undefined)}>
-          <DeleteDialog
-            onConfirm={() => setDeletetingCardID(undefined)}
+      {deletingCardID && (
+        <Overlay onClick={() => setDeletingCardID(undefined)}>
+          <DeleteDialog 
+          onConfirm={()=>setDeletingCardID(undefined)}
           />
         </Overlay>
       )}

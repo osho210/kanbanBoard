@@ -95,18 +95,14 @@ export function App() {
               cards={cards}
               onCardDragStart={cardID => setDraggingCardID(cardID)}
               onCardDrop={entered => dropCardTo(entered ?? columnID)}
-              onCardDeleteClick={cardID => setDeletetingCardID(cardID)}
+              onCardDeleteClick={CardID => setDeletetingCardID(cardID)}
             />
           ))}
         </HorizontalScroll>
       </MainArea>
-      {deletetingCardID && (
-        <Overlay onClick={() => setDeletetingCardID(undefined)}>
-          <DeleteDialog
-            onConfirm={() => setDeletetingCardID(undefined)}
-          />
-        </Overlay>
-      )}
+      <Overlay>
+        <DeleteDialog />
+      </Overlay>
     </Container>
   )
 }

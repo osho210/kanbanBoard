@@ -42,7 +42,7 @@ export function Card({
         ),
       )}
 
-      <DeleteButton onClick={onDeleteClick} />
+      <DeleteButton onClick/>
     </Container>
   )
 }

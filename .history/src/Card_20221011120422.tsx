@@ -10,12 +10,12 @@ export function Card({
   text,
   onDragStart,
   onDragEnd,
-  onDeleteClick,
+  
 }: {
   text?: string
   onDragStart?(): void
   onDragEnd?(): void
-  onDeleteClick?(): void
+
 }) {
   const [drag, setDrag] = useState(false)
   return (
@@ -42,7 +42,7 @@ export function Card({
         ),
       )}
 
-      <DeleteButton onClick={onDeleteClick} />
+      <DeleteButton />
     </Container>
   )
 }

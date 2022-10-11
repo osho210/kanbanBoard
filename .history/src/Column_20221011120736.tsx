@@ -21,7 +21,7 @@ export function Column({
   }[]
   onCardDragStart?(id: string): void
   onCardDrop?(entered: string | null): void
-  onCardDeleteClick?(id: string): void
+    onCardDeleteClick
 }) {
   const filterValue = rawFilterValue?.trim()
   const keywords = filterValue?.toLowerCase().split(/\s+/g) ?? []
@@ -81,9 +81,7 @@ export function Column({
               // cardで定義した方の呼び出しができていないかったためエラーの発生
               onDragStart={() => handleCardDragStart(id)}
               onDragEnd
-              ={() => setDraggingCardID(undefined)}
-              onDeleteClick={() => onCardDeleteClick?.(id)}
-            />
+              ={() => setDraggingCardID(undefined)} />
           </Card.DropArea>
         ))}
 

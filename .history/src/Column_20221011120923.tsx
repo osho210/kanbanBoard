@@ -82,7 +82,7 @@ export function Column({
               onDragStart={() => handleCardDragStart(id)}
               onDragEnd
               ={() => setDraggingCardID(undefined)}
-              onDeleteClick={() => onCardDeleteClick?.(id)}
+              onDeleteClick={() => onCardDeleteClick.(id)}
             />
           </Card.DropArea>
         ))}

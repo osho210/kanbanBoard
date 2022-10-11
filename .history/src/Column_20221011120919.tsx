@@ -81,9 +81,9 @@ export function Column({
               // cardで定義した方の呼び出しができていないかったためエラーの発生
               onDragStart={() => handleCardDragStart(id)}
               onDragEnd
-              ={() => setDraggingCardID(undefined)}
-              onDeleteClick={() => onCardDeleteClick?.(id)}
-            />
+              ={() => setDraggingCardID(undefined)} 
+              onDeleteClick={()=>onCardDeleteClick}
+              />
           </Card.DropArea>
         ))}
 

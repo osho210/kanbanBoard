@@ -103,8 +103,9 @@ export function App() {
       {deletetingCardID && (
         <Overlay onClick={() => setDeletetingCardID(undefined)}>
           <DeleteDialog
-            onConfirm={() => setDeletetingCardID(undefined)}
-          />
+           onConfirm={()=>setDeletetingCardID(undefined)}
+           
+           />
         </Overlay>
       )}
     </Container>
