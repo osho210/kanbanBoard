@@ -6,7 +6,7 @@ import produce from 'immer'
 import { DeleteDialog } from "./DeleteDialog";
 import { Overlay as _Overlay } from "./Overlay";
 import { randomID } from './util'
-import { api } from './api'
+import { api } from './api.tsx'
 
 export function App() {
   const [filterValue, setFilterValue] = useState('')

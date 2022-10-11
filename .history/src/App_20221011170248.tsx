@@ -100,9 +100,7 @@ export function App() {
   }
 
   const addCard = (columnID: string) => {
-    const column = columns.find(c => c.id === columnID)
-    if (!column) return
-    const text = column.text
+    const column = columns
     const cardID = randomID()
     type Columns = typeof columns
     setColumns(
@@ -117,10 +115,6 @@ export function App() {
         column.text = ''
       }),
     )
-    api('POST /v1/cards', {
-      id: cardID,
-      text
-    })
   }
 
   const deleteCard = () => {

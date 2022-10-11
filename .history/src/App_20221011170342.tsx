@@ -117,10 +117,6 @@ export function App() {
         column.text = ''
       }),
     )
-    api('POST /v1/cards', {
-      id: cardID,
-      text
-    })
   }
 
   const deleteCard = () => {
