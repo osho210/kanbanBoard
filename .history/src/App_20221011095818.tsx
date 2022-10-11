@@ -97,7 +97,7 @@ export function App() {
         </HorizontalScroll>
       </MainArea>
       <Overlay>
-        <DeleteDialog />
+        <
       </Overlay>
     </Container>
   )
@@ -135,10 +135,4 @@ const HorizontalScroll = styled.div`
     flex: 0 0 16px;
     content: '';
   }
-`
-
-const Overlay = styled(_Overlay)`
-display:flex;
-justify-content:center;
-align-items:center;
 `

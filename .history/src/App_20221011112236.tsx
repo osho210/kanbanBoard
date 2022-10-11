@@ -136,9 +136,3 @@ const HorizontalScroll = styled.div`
     content: '';
   }
 `
-
-const Overlay = styled(_Overlay)`
-display:flex;
-justify-content:center;
-align-items:center;
-`

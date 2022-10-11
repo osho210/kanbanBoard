@@ -137,8 +137,7 @@ const HorizontalScroll = styled.div`
   }
 `
 
-const Overlay = styled(_Overlay)`
+const Overlay=styled(_Overlay)`
 display:flex;
-justify-content:center;
-align-items:center;
+justify-content
 `
