@@ -85,48 +85,48 @@ export function App() {
   const deleteCard = () => {
     const cardID = deletetingCardID
     if (!cardID) return
-
+    
     setDeletetingCardID(undefined)
 
     type Columns = typeof columns
     setColumns(
       produce((columns: Columns) => {
         const column = columns.find(col => col.cards.some(c => c.id === cardID))
-        if (!column) return
+      })
+      if (!column) return
 
-        column.cards = column.cards.filter(c => c.id !== cardID)
-      }),
-    )
-  }
-
-  return (
-    <Container>
-      <Header filterValue={filterValue} onFilterChange={setFilterValue} />
-      <MainArea>
-        <HorizontalScroll>
-          {columns.map(({ id: columnID, title, cards }) => (
-            <Column
-              key={columnID}
-              title={title}
-              filterValue={filterValue}
-              cards={cards}
-              onCardDragStart={cardID => setDraggingCardID(cardID)}
-              onCardDrop={entered => dropCardTo(entered ?? columnID)}
-              onCardDeleteClick={cardID => setDeletetingCardID(cardID)}
-            />
-          ))}
-        </HorizontalScroll>
-      </MainArea>
-      {deletetingCardID && (
-        <Overlay onClick={() => setDeletetingCardID(undefined)}>
-          <DeleteDialog
-            onConfirm={deleteCard}
-            onCancel={() => setDeletetingCardID(undefined)}
-          />
-        </Overlay>
-      )}
-    </Container>
+    column.cards = column.cards.filter(c => c.id !== cardID)
+  }),
   )
+}
+
+return (
+  <Container>
+    <Header filterValue={filterValue} onFilterChange={setFilterValue} />
+    <MainArea>
+      <HorizontalScroll>
+        {columns.map(({ id: columnID, title, cards }) => (
+          <Column
+            key={columnID}
+            title={title}
+            filterValue={filterValue}
+            cards={cards}
+            onCardDragStart={cardID => setDraggingCardID(cardID)}
+            onCardDrop={entered => dropCardTo(entered ?? columnID)}
+            onCardDeleteClick={cardID => setDeletetingCardID(cardID)}
+          />
+        ))}
+      </HorizontalScroll>
+    </MainArea>
+    {deletetingCardID && (
+      <Overlay onClick={() => setDeletetingCardID(undefined)}>
+        <DeleteDialog
+          onConfirm={() => setDeletetingCardID(undefined)}
+        />
+      </Overlay>
+    )}
+  </Container>
+)
 }
 
 const Container = styled.div`

@@ -82,21 +82,10 @@ export function App() {
     )
   }
 
-  const deleteCard = () => {
+  const deleteCard=()=>{
     const cardID = deletetingCardID
-    if (!cardID) return
-
+    if(!cardID)return
     setDeletetingCardID(undefined)
-
-    type Columns = typeof columns
-    setColumns(
-      produce((columns: Columns) => {
-        const column = columns.find(col => col.cards.some(c => c.id === cardID))
-        if (!column) return
-
-        column.cards = column.cards.filter(c => c.id !== cardID)
-      }),
-    )
   }
 
   return (
@@ -120,8 +109,7 @@ export function App() {
       {deletetingCardID && (
         <Overlay onClick={() => setDeletetingCardID(undefined)}>
           <DeleteDialog
-            onConfirm={deleteCard}
-            onCancel={() => setDeletetingCardID(undefined)}
+            onConfirm={() => setDeletetingCardID(undefined)}
           />
         </Overlay>
       )}
