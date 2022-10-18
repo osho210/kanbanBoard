@@ -6,13 +6,8 @@ import { reducer } from './reducer'
 import { GlobalStyle } from './GlobalStyle'
 import { App } from './App'
 
-const store = createStore(
-    reducer,
-    undefined,
-    process.env.NODE_ENV === 'development'
-        ? window.__REDUX_DEVTOOLS_EXTENSION__?.()
-        : undefined,
-)
+const store = createStore(reducer
+    )
 // 第一引数を第二引数のDOM要素にマウントするメソッド
 ReactDOM.render(
     <Provider store={store}>

@@ -6,11 +6,10 @@ import { reducer } from './reducer'
 import { GlobalStyle } from './GlobalStyle'
 import { App } from './App'
 
-const store = createStore(
-    reducer,
+const store = createStore(reducer,
     undefined,
     process.env.NODE_ENV === 'development'
-        ? window.__REDUX_DEVTOOLS_EXTENSION__?.()
+        ? window.__REDUX_DEVETOOLS_EXTENSION__?.()
         : undefined,
 )
 // 第一引数を第二引数のDOM要素にマウントするメソッド

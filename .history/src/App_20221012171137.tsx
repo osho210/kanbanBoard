@@ -27,7 +27,7 @@ export function App() {
   const dispatch = useDispatch()
   const filterValue = useSelector(state => state.filterValue)
   const setFilterValue = (value: string) =>
-    dispatch({
+    dispatch<Action>({
       type: 'Filter.SetFilter',
       payload: {
         value,
